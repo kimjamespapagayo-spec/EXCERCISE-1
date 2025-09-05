@@ -4,7 +4,7 @@ let users = [
 ];
 
 let names = users.map(user => user.name);
-console.log(names); // Result: ["Kristian", "Malingin"]
+console.log(names); 
 
 let people = [
   { name: "Kristian", age: 16 },
@@ -13,8 +13,7 @@ let people = [
 ];
 
 let adults = people.filter(person => person.age >= 18);
-console.log(adults); // Result: [{name:"Malingin", age:18}, {name:"Spike", age:22}]
-
+console.log(adults); 
 let people = [
   { name: "Kristian", age: 25 },
   { name: "Malingin", age: 32 },
@@ -25,5 +24,6 @@ let oldestPerson = people.reduce((oldest, person) => {
   return person.age > oldest.age ? person : oldest;
 }, people[0]);
 
-console.log(oldestPerson); // Result: { name: "Malingin", age: 32 }
+console.log(oldestPerson); 
+
 
